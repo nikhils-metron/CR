@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Launch NestJS",
+        "runtimeExecutable": "npm",
+        "runtimeArgs": ["run", "start:debug"], // This assumes you have a script for debug
+        "port": 9229, // Default port for Node.js debugging
+        "env": {
+          "NODE_ENV": "development"
+        },
+        "sourceMaps": true,
+        "outFiles": [
+          "${workspaceFolder}/dist/**/*.js"
+        ]
+      }
+    ]
+  }
+  
